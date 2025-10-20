@@ -1,41 +1,42 @@
 /*Defalt Styling
 ==================================================================================*/
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 
-html {
-    overflow-x: hidden;
 }
-
+html{
+  overflow-x: hidden;
+}
 body {
-    overflow-x: hidden;
-    width: 100%;
-    scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
 }
-
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
-
 ::selection {
-    background-color: #3a393a;
-    color: white;
+  background-color: #3a393a;
+  color: white;
 }
-
 /*Defalt Styling
 ==================================================================================*/
-/*theme color
-==================================================================================*/
-:root {
-    --themeRed: #CF0A2C;
-    --themeBlue: #0d1d41;
-}
+
+
 
 /*theme color
 ==================================================================================*/
+:root{
+    --themeRed:#CF0A2C;
+    --themeBlue:#0d1d41;
+}
+/*theme color
+==================================================================================*/
+
+
+
 /*theme fonts style
 ==================================================================================*/
 @font-face {
@@ -44,68 +45,105 @@ a {
     font-weight: normal;
     src: local('Termina Test Medium'), url('./TerminaTest-Medium.woff') format('woff');
 }
-
 @font-face {
     font-family: 'Termina Heavy';
     font-style: normal;
     font-weight: normal;
     src: local('Termina Test Heavy'), url('./TerminaTest-Heavy.woff') format('woff');
 }
-
 @font-face {
-    font-family: "Big Caslon";
-    src: url("./Big Caslon Medium.ttf") format("ttf");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Big Caslon";
+  src: url("./Big Caslon Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-
 /*theme fonts style
 ===================================================================================*/
+
+
+
 /*Custom css classes
 ==================================================================================*/
 .container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0px 12px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 12px;
 }
+.banner_container{
+    width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0px 12px;
+      box-sizing: border-box;
+    }
+   .game_of_month_container{
+    width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0px 12px;
+      box-sizing: border-box;
+   }
+
 
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
+  .banner_container{
+    max-width: 540px
+   }
+   .game_of_month_container{
+    max-width: 540px;
+   }
 }
-
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
+  .banner_container{
+    max-width: 720px
+   }
+   .game_of_month_container{
+    max-width: 720px
+   }
 }
-
 @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
+  .banner_container{
+    max-width: 960px
+   }
+   .game_of_month_container{
+    max-width: 960px
+   }
 }
-
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
+  .container {
+    max-width: 1140px;
+  }
+  .banner_container{
+    max-width: 980px;
+   }
+   .game_of_month_container{
+    max-width: 1200px;
+   }
 }
-
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
-    }
-}
-
+/*@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}*/
 /*Custom css classes
 ==================================================================================*/
+
+
+
 /*theme heading + theme buttons
 ==================================================================================*/
-.heading_2 {
+.heading_2{
     font-size: 48px;
     font-size: 800;
     color: white;
@@ -113,41 +151,35 @@ a {
     text-align: center;
     font-family: 'Termina Heavy';
 }
-
-ul {
+ul{
     color: white;
     padding-left: 20px;
 }
-
-ul li {
+ul li{
     font-size: 16px;
     font-weight: 500;
     font-family: 'Termina Medium';
 }
-
-.btn {
-    border: none;
+.btn{
+    border:none;
 }
-
-.btn_theme_danger_large {
+.btn_theme_danger_large{
     background-color: #cf0a2c;
     color: white;
     font-family: 'Termina Medium';
     font-size: 20px;
     border-radius: 32px;
     transition: 0.35s;
-    border: 1px dashed transparent;
+    border:1px dashed transparent;
     padding: 10px 40px;
     cursor: pointer;
 }
-
-.btn_theme_danger_large:hover {
+.btn_theme_danger_large:hover{
     background: white;
-    color: var(--themeBlue);
+   color: var(--themeBlue);
 }
-
-.btn_theme_danger_small {
-    padding: 8px 20px;
+.btn_theme_danger_small{
+    padding: 8px 20px ;
     background: var(--themeRed);
     color: white;
     font-family: 'Termina Medium';
@@ -157,14 +189,12 @@ ul li {
     cursor: pointer;
     transition: 0.35s;
 }
-
-.btn_theme_danger_small:hover {
+.btn_theme_danger_small:hover{
     background: white;
     color: var(--themeBlue);
 }
-
-.btn_theme_white_small {
-    padding: 8px 20px;
+.btn_theme_white_small{
+    padding: 8px 20px ;
     background: transparent;
     color: white;
     font-family: 'Termina Medium';
@@ -173,20 +203,20 @@ ul li {
     border-radius: 16px;
     cursor: pointer;
     transition: 0.35s;
-    border: 1px dashed white;
+    border:1px dashed white;
 }
-
-.btn_theme_white_small span {
+.btn_theme_white_small span{
     font-weight: 700;
 }
-
-.btn_theme_white_small:hover {
+.btn_theme_white_small:hover{
     background: white;
     color: var(--themeBlue);
 }
-
 /*theme heading + theme buttons
 ==================================================================================*/
+
+
+
 /* page Loader 
 ==================================================================================*/
 #preloader {
@@ -194,24 +224,21 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#0d1d41, #0D1D41 100%, #214BA7);
+    background: linear-gradient(#0d1d41 ,  #0D1D41 100% ,#214BA7);
     z-index: 500;
     height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
-    animation: fadeOut 1s ease 0.5s forwards;
-    /* 3s delay ke baad fade out */
+    animation: fadeOut 1s ease 0.5s forwards; 
 }
-
 #loader {
     position: relative;
     width: 4px;
     height: 4px;
     display: inline-block;
 }
-
-#loader>div {
+#loader > div {
     background: white;
     width: 8px;
     height: 8px;
@@ -220,86 +247,67 @@ ul li {
     left: 0;
     border-radius: 50%;
 }
-
-#loader>div:nth-of-type(1) {
+#loader > div:nth-of-type(1) {
     left: 15px;
 }
-
-#loader>div:nth-of-type(3) {
+#loader > div:nth-of-type(3) {
     left: -15px;
 }
-
-.dots-fade>div {
+.dots-fade > div {
     animation: dots-fade 1.6s infinite ease;
     animation-delay: 0.4s;
 }
-
-.dots-fade>div:nth-of-type(1) {
+.dots-fade > div:nth-of-type(1) {
     animation-delay: 0.8s;
 }
-
-.dots-fade>div:nth-of-type(3) {
+.dots-fade > div:nth-of-type(3) {
     animation-delay: 0s;
 }
 
 @keyframes dots-fade {
-    0% {
-        opacity: 1;
-    }
-
-    40% {
-        opacity: 0.2;
-    }
-
-    80% {
-        opacity: 1;
-    }
+    0% { opacity: 1; }
+    40% { opacity: 0.2; }
+    80% { opacity: 1; }
 }
-
 @keyframes fadeOut {
     to {
         opacity: 0;
         visibility: hidden;
     }
 }
-
 .content {
     opacity: 0;
     animation: showContent 1s ease 0.5s forwards;
 }
-
 @keyframes showContent {
-    to {
-        opacity: 1;
-    }
+    to { opacity: 1; }
 }
-
 /* page Loader 
 ==================================================================================*/
+
+
+
 /*Navbar Base 
 =================================================================================*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#0d1d41, #214BA7);
+    background: linear-gradient(#0d1d41 ,#214BA7);
     position: relative;
 }
-
 .logo {
     margin-top: 36px;
     text-align: center;
 }
-
 .menu {
     display: flex;
     gap: 25px;
-    padding: 16px 0px;
+    padding: 16px 0px ;
     border-top: 2px solid #cf0a2c;
     margin-top: 16px;
     justify-content: space-between;
 }
-
 .menu a {
     max-width: 200px;
     color: #fff;
@@ -310,11 +318,9 @@ ul li {
     text-align: center;
     font-family: 'Termina Medium';
 }
-
 .menu a:hover {
     color: #cf0a2c;
 }
-
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -323,7 +329,6 @@ ul li {
     height: 18px;
     cursor: pointer;
 }
-
 .menu-icon span {
     display: block;
     height: 3px;
@@ -331,23 +336,23 @@ ul li {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
-
 .menu-toggle {
     display: none;
 }
-
 /*Navbar Base 
 =================================================================================*/
+
+
+
 /*banner css
 ============================================================================================*/
-.banner {
+.banner{
     padding: 70px 0px;
     position: relative;
-    background: linear-gradient(#cf0a2c, #690516);
+    background:linear-gradient(#cf0a2c , #690516);
     z-index: 1;
 }
-
-.banner::before {
+.banner::before{
     content: "";
     position: absolute;
     left: 0;
@@ -358,8 +363,7 @@ ul li {
     z-index: -1;
     background-size: 50%;
 }
-
-.banner_box {
+.banner_box{
     background: linear-gradient(90deg, #C4CED4 0%, #FFFFFF 50%, #FFFFFF 50%, #C4CED4 100%);
     display: flex;
     justify-content: center;
@@ -369,26 +373,27 @@ ul li {
     padding: 100px 100px;
     box-sizing: border-box;
 }
-
-.banner_box h1 {
+.banner_box h1{
     color: #CF0A2C;
     font-size: 36px;
     font-weight: 800;
     text-align: center;
     font-family: 'Termina Heavy';
 }
-
 /*banner css
 ============================================================================================*/
+
+
+
+
 /*swag_bag section css
 ============================================================================================*/
-.swag_bag {
+.swag_bag{
     background: #0D1D41;
     padding-top: 80px;
     padding-bottom: 20px;
 }
-
-.swag_bag_grid {
+.swag_bag_grid{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -396,40 +401,35 @@ ul li {
     align-items: center;
     gap: 50px;
 }
-
-.swag_bag_btn_box {
+.swag_bag_btn_box{
     margin-top: 60px;
 }
-
-.swag_bag_image_box {
+.swag_bag_image_box{
     max-width: 400px;
     position: relative;
 }
-
-.swag_bag_image_box img {
+.swag_bag_image_box img{
     width: 100%;
     height: auto;
 }
-
-.swag_bag_img_wrapper {
+.swag_bag_img_wrapper{
     display: flex;
     justify-content: space-evenly;
 }
-
 /*swag_bag section css
 ============================================================================================*/
+
+
+
 /*Game of the month section css
 =========================================================================================== */
-.game_of_month {
+.game_of_month{
     background: linear-gradient(180deg, #0D1D41 0%, #0A225C 50%, #0D1D41 100%);
 }
-
-.bg {
-    position: relative;
-    z-index: ;
+.bg{
+    position: relative;z-index: ;
 }
-
-.bg:before {
+.bg:before{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -442,47 +442,41 @@ ul li {
     content: "";
     z-index: -1;
 }
-
 .scroll-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto; 
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
-
 .scroll-container {
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-    padding-bottom: 40px;
-    width: ;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  padding-bottom: 40px;
+  width: ;
 }
-
 .scroll_box {
-    flex: 0 0 100%;
-    height: 100%;
-    scroll-snap-align: start;
+  flex: 0 0 102%;
+  height: 100%;
+  scroll-snap-align: start;
 }
-
 .scroll_box_first {
-    padding-top: 80px;
-    position: relative;
+  padding-top: 80px;
+  position: relative;
 }
-
 .scroll_box_second {
-    background: radial-gradient(circle, #0032AE 0%, #0D1D41 100%);
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    text-align: center;
-    z-index: 0;
+     background:radial-gradient(#0032AE 0%, #0d1d4100 65%);
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 50px;
+     text-align: center;
+     z-index: 0;
 }
-
-.scroll_box_second p {
+.scroll_box_second p{
     color: white;
     max-width: 500px;
     margin: 30px auto 50px auto;
@@ -491,66 +485,58 @@ ul li {
     font-weight: 500;
     font-family: 'Termina Medium';
 }
-
 .scroll-wrapper::-webkit-scrollbar {
-    height: 17px;
-    border-radius: 10px;
-    background: #08132C;
+  height: 17px;
+  border-radius: 10px;
+  background: #08132C;
 }
-
 .scroll-wrapper::-webkit-scrollbar-thumb {
-    background: #112E70;
-    border-radius: 10px;
+  background: #112E70;
+  border-radius: 10px;
 }
-
 .scroll-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #112E70;
+  background: #112E70;
 }
-
-.game_of_month_box {
+.game_of_month_box{
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     gap: 30px;
 }
-
-.game_of_month_box_img {
+.game_of_month_box_img{
     max-width: 500px;
     height: auto;
-    transform: translate(0px, 12px);
+    transform: translate(0px ,12px);
+   
 }
 
-.game_of_month_box_data_box {
+.game_of_month_box_data_box{
     max-width: 650px;
 }
-
-.game_of_month_box_data_box h2 {
+.game_of_month_box_data_box h2{
     color: white;
     font-size: 40px;
     font-family: 'Termina Heavy';
-}
 
-.game_of_month_box_data_box p {
+}
+.game_of_month_box_data_box p{
     color: white;
     font-size: 18px;
     font-family: 'Termina Medium';
     font-weight: 500;
-    margin: 20px 0px;
+    margin:20px 0px;
     max-width: 500px;
 }
-
-.game_of_month_box_data_box .img_griup {
+.game_of_month_box_data_box .img_griup{
     display: flex;
     gap: 10px;
 }
-
-.game_of_month_box_data_box .img_griup img {
+.game_of_month_box_data_box .img_griup img{
     width: 50%;
     height: auto;
 }
-
-.game_of_month_box_data_box .dateTime {
+.game_of_month_box_data_box .dateTime{
     margin: 15px 0px;
     font-family: 'Termina Medium';
     font-weight: 500;
@@ -559,18 +545,15 @@ ul li {
     color: white;
     display: block;
 }
-
-.game_of_month_box_data_box .dateTime span {
+.game_of_month_box_data_box .dateTime span{
     color: var(--themeRed);
 }
-
-.game_of_month_box_data_box .btn_group {
+.game_of_month_box_data_box .btn_group{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
-.game_of_month_box_heading {
+.game_of_month_box_heading{
     font-family: "Big Caslon";
     font-size: 100px;
     font-weight: 500;
@@ -583,8 +566,7 @@ ul li {
     display: block;
     text-align: center;
 }
-
-.game_of_month_box_heading2 {
+.game_of_month_box_heading2{
     font-family: "Big Caslon";
     font-size: 100px;
     font-weight: 500;
@@ -597,17 +579,14 @@ ul li {
     display: block;
     text-align: center;
 }
-
-.game_of_month2 {
+.game_of_month2{
     padding-top: 70px;
     padding-bottom: 20px;
 }
-
-.scroll_box_first2 {
+.scroll_box_first2{
     padding-top: 30px;
 }
-
-.mobile_game_of_month_heading {
+.mobile_game_of_month_heading{
     display: none;
     font-family: "Big Caslon";
     font-size: 50px;
@@ -617,85 +596,113 @@ ul li {
     opacity: .5;
     text-align: center;
 }
+.image_box_1{
+    position: relative;
+    z-index: 1;
+}
+.image_box_1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(164deg,rgba(255, 255, 255, 0) 0%, rgba(13, 29, 65, 1) 33%, rgba(255, 255, 255, 0) 100%);
+    width: 50%;
+    height: 25%;
+    z-index: -1;
+}
+.image_box_2{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.image_box_2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: radial-gradient(circle,rgba(255, 255, 255, 0) 15%, rgba(12, 32, 78, 1) 68%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
 /*Game of the month section css
 =========================================================================================== */
+
+
+
+
 /*ADDITIONAL PERKS section css
 ============================================================================================*/
-.additional {
+.additional{
     background: linear-gradient(to bottom, #0D1D41, #CF0A2C);
     padding: 70px 0px;
 }
-
-.additional_heading {
+.additional_heading{
     text-align: center;
 }
-
-.additional_heading p {
+.additional_heading p{
     font-size: 20px;
     font-family: 'Termina Medium';
     font-weight: 400;
     color: white;
     margin: 0;
 }
-
-.additional_scroll_wrapper {
+.additional_scroll_wrapper{
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 30px;
-    padding: 40px 0px;
-    scroll-snap-align: start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 30px;
+      padding: 40px 0px;
+      scroll-snap-align: start;
+      scroll-padding-left: 25px; 
 }
-
-.additional_card {
-    flex: 0 0 calc((100% - 60px) / 3);
-    scroll-snap-align: start;
-    background: white;
-    padding: 36px;
-    text-align: center;
-    border-radius: 30px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    text-align: center;
+.spacer {
+  flex: 0 0 0px;
+  pointer-events: none;
 }
-
-.additional_card img {
+.additional_card{
+   flex: 0 0 calc((100% - 100px) / 3);
+   scroll-snap-align: start;
+   background: white;
+   padding: 36px;
+   text-align: center;
+   border-radius: 30px;
+   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+   box-sizing: border-box;
+   text-align: center;
+}
+.additional_card img{
     width: 100%;
     height: auto;
 }
-
-.additional_card .card_title {
+.additional_card .card_title{
     padding-top: 20px;
     min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.additional_card .card_title p {
+.additional_card .card_title p{
     font-size: 20px;
     font-family: 'Termina Medium';
     font-weight: 500;
     color: #0D1D41;
 }
-
-.additional_card .card_text {
+.additional_card .card_text{
     padding: 16px 0px;
     min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.additional_card .card_text p {
+.additional_card .card_text p{
     font-size: 14px;
     font-family: 'Termina Medium';
     font-weight: 500;
     color: #000000;
 }
-
-.additional_card .card_button {
+.additional_card .card_button{
     background: var(--themeBlue);
     color: white;
     text-align: center;
@@ -707,41 +714,38 @@ ul li {
     font-size: 20px;
     transition: 0.35s;
 }
-
-.additional_card .card_button:hover {
+.additional_card .card_button:hover{
     background: white;
     color: var(--themeBlue);
 }
-
 .additional_scroll_wrapper::-webkit-scrollbar {
-    height: 17px;
-    border-radius: 10px;
-    background: #8F0920;
+  height: 17px;
+  border-radius: 10px;
+  background: #8F0920;
 }
-
 .additional_scroll_wrapper::-webkit-scrollbar-thumb {
-    background: #F31037;
-    border-radius: 10px;
+  background: #F31037;
+  border-radius: 10px;
 }
-
 .additional_scroll_wrapper::-webkit-scrollbar-thumb:hover {
-    background: #F31037;
+  background: #F31037;
 }
-
 /*ADDITIONAL PERKS section css
 ============================================================================================*/
+
+
+
+
 /*subscriber section css
 ===========================================================================================*/
-.subscriber {
+.subscriber{
     background: #cf0a2c;
     padding: 20px 0px 70px 0px;
 }
-
-.subscriber_heading {
+.subscriber_heading{
     text-align: center;
 }
-
-.subscriber_wrapper {
+.subscriber_wrapper{
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
@@ -749,82 +753,75 @@ ul li {
     padding-top: 40px;
     align-items: center;
 }
-
-.subscriber_image_box {
+.subscriber_image_box{
     max-width: 250px;
 }
-
-.subscriber_image_box img {
+.subscriber_image_box img{
     width: 100%;
     height: auto;
 }
-
-.subscriber_quote {
+.subscriber_quote{
     padding: 20px 40px;
-    border: 1px solid white;
+    border:1px solid white;
     border-radius: 16px;
     background: linear-gradient(to bottom, #CF0A2C, #690516);
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
     position: relative;
     z-index: 1;
 }
-
-.quote_left {
+.quote_left{
     position: absolute;
     left: -12px;
     top: 5px;
     width: 40px;
 }
-
-.quote_right {
+.quote_right{
     position: absolute;
     top: 5px;
     right: -12px;
     transform: rotate(180deg);
     width: 40px;
-}
 
-.subscriber_quote_text {
+}
+.subscriber_quote_text{
     font-family: 'Termina Medium';
     font-weight: 400;
     font-size: 18px;
     margin: 0;
     color: white;
 }
-
-.subscriber_quote_name {
+.subscriber_quote_name{
     padding-top: 20px;
 }
-
-.subscriber_quote_name span {
+.subscriber_quote_name span{
     color: white;
     font-size: 36px;
     font-family: "Big Caslon";
     font-weight: 500;
 }
-
-.subscriber_quote_name p {
+.subscriber_quote_name p{
     margin: 0;
     font-family: 'Termina Medium';
     font-weight: 400;
     font-size: 16px;
     color: white;
 }
-
 /*subscriber section css
 ===========================================================================================*/
+
+
+
+
 /*ULTIMATE FAN EXPERIENCES section css
 ==========================================================================================*/
-.ultimate {
+.ultimate{
     background: #cf0a2c;
     padding: 20px 0px 70px 0px;
 }
-
-.ultimate_heading {
+.ultimate_heading{
     text-align: center;
 }
-
-.ultimate_heading p {
+.ultimate_heading p{
     font-size: 16px;
     font-family: 'Termina Medium';
     font-weight: 400;
@@ -832,33 +829,45 @@ ul li {
     margin: 0 auto 0 auto;
     max-width: 60%;
 }
-
-.ultimate_scroll_wrapper {
+.ultimate_scroll_wrapper{
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 60px;
-    padding: 40px 0px;
-    scroll-snap-align: start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 60px;
+      padding: 40px 0px;
+      scroll-snap-align: start;
 }
-
-.ultimate_card {
-    flex: 0 0 calc((100% - 125px) / 3);
-    scroll-snap-align: start;
-    background: transparent;
-    padding: 36px;
-    text-align: center;
-    border-radius: 30px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    text-align: center;
+.flip-box {
+  flex: 0 0 calc((100% - 125px) / 3);
+   scroll-snap-align: start;
+   background: transparent;
+   text-align: center;
+   border-radius: 30px;
+   box-sizing: border-box;
+   text-align: center;
+   overflow: hidden;
+   min-height: 392px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.flip-box-front img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -11;
+}
+.flip-box-front{
     position: relative;
-    overflow: hidden;
-    min-height: 392px;
     z-index: 1;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
-
-.ultimate_card::before {
+.flip-box-front::before{
     content: "";
     position: absolute;
     left: 0;
@@ -869,34 +878,20 @@ ul li {
     opacity: 0.5;
     z-index: -1;
 }
-
-.ultimate_card img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    z-index: -11;
-}
-
-.ultimate_card .card_title p {
+.flip-box-front .card_title p{
     font-size: 16px;
     font-family: 'Termina Medium';
     font-weight: 500;
     color: #fff;
 }
-
-.ultimate_card .card_text {
+.flip-box-front .card_text{
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-
-.ultimate_card .card_text p {
+.flip-box-front .card_text p{
     font-weight: 700;
     font-family: 'Termina Heavy';
     font-size: 20px;
@@ -908,8 +903,7 @@ ul li {
     color: white;
     list-style: 120%;
 }
-
-.ultimate_card .card_button {
+.flip-box-front .card_button{
     background: var(--themeBlue);
     color: white;
     text-align: center;
@@ -921,99 +915,165 @@ ul li {
     font-size: 20px;
     transition: 0.35s;
 }
-
-.ultimate_card .card_button:hover {
+.flip-box-front .card_button:hover{
     background: white;
     color: var(--themeBlue);
 }
 
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  background: radial-gradient(circle at center, #d71927 0%, #8b0e16 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotateY(180deg);
+  padding: 50px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+.flip-box-back .card_date p{
+    font-family: 'Termina Medium';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+.card_back_heading{
+    min-height: 50px;
+    margin: 30px auto 20px auto;
+}
+.card_back_heading p{
+    font-weight: 700;
+    font-family: 'Termina Heavy';
+    font-size: 20px;
+    color: white;    
+}
+.card_back_text{
+    font-family: 'Termina Medium';
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+}
 .ultimate_scroll_wrapper::-webkit-scrollbar {
-    height: 17px;
-    border-radius: 10px;
-    background: #8F0920;
+  height: 17px;
+  border-radius: 10px;
+  background: #8F0920;
 }
-
 .ultimate_scroll_wrapper::-webkit-scrollbar-thumb {
-    background: #F31037;
-    border-radius: 10px;
+  background: #F31037;
+  border-radius: 10px;
 }
-
 .ultimate_scroll_wrapper::-webkit-scrollbar-thumb:hover {
-    background: #F31037;
+  background: #F31037;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
+.ultimate_card:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
 /*ULTIMATE FAN EXPERIENCES section css
 ==========================================================================================*/
+
+
 /*schedule page css
 ==========================================================================================*/
-.schedule_page_header {
+.schedule_page_header{
     background: linear-gradient(180deg, #0D1D41 0%, #214BA7 100%);
     padding: 20px;
 }
-
-.schedule_page_header_logo {
+.schedule_page_header_logo{
     text-align: center;
 }
-
 .tabs {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
-
 .tabs input[type="radio"] {
-    position: absolute;
-    opacity: 0;
+  position: absolute;
+  opacity: 0;
 }
-
 .tab-link {
-    display: flex;
-    gap: 10px;
-    padding-top: 20px;
-    justify-content: space-between;
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+  justify-content: space-between;
 }
-
 .tab-link label {
-    color: white;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    font-weight: 500;
-    font-family: 'Termina Medium';
-    font-size: 36px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 500;
+  font-family: 'Termina Medium';
+  font-size: 36px;
 }
-
 .tab-link label:hover {
-    color: var(--themeRed);
+  color: var(--themeRed);
 }
-
-#tab1:checked~.schedule_page_header .tab-link label[for="tab1"],
-#tab2:checked~.schedule_page_header .tab-link label[for="tab2"] {
-    color: var(--themeRed);
-    text-decoration: underline;
+#tab1:checked ~ .schedule_page_header .tab-link label[for="tab1"],
+#tab2:checked ~ .schedule_page_header .tab-link label[for="tab2"] {
+  color: var(--themeRed);
+  text-decoration: underline;
 }
-
 .tab-pannel {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
-
-#tab1:checked~.tab-content #content1,
-#tab2:checked~.tab-content #content2 {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
-
-.tab-content {
-    background: linear-gradient(135deg, #CF0A2C 0%, #0D1D41 100%);
+.tab-content{
+    background: linear-gradient(to bottom left, #1a2850 0%, #2a1a4a 30%, #3d1a42 50%, #6b1a38 70%, #c41e3a 100%);
 }
-
-.tab_content_wrapper {
+.tab_content_wrapper{
     padding: 70px 0px 100px 0px;
 }
-
-.page_content_heading span {
+.page_content_heading span{
     font-family: "Big Caslon";
     font-weight: 500;
     opacity: 0.8;
@@ -1021,14 +1081,13 @@ ul li {
     display: block;
     text-align: center;
     background: linear-gradient(135deg, #f5f5f5 0%, #1b3b83 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    line-height: 70%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      line-height: 70%;
 }
-
-.page_content_heading h2 {
+.page_content_heading h2{
     font-weight: 700;
     font-family: 'Termina Heavy';
     color: white;
@@ -1036,8 +1095,7 @@ ul li {
     margin: 0;
     text-align: center;
 }
-
-.page_content_heading p {
+.page_content_heading p{
     font-weight: 500;
     font-family: 'Termina Medium';
     margin: 0;
@@ -1046,31 +1104,25 @@ ul li {
     color: white;
     list-style: 80%;
 }
-
-.schedule_page_table {
+.schedule_page_table{
     margin-top: 70px;
-    border: 3px solid white;
+    border:3px solid white;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
 }
-
-.schedule_page_table table {
+.schedule_page_table table{
     width: 100%;
 }
-
-.schedule_page_table table tbody tr:first-child .opponent_data_box {
+.schedule_page_table table tbody tr:first-child .opponent_data_box{
     padding-top: 20px !important;
 }
-
-.schedule_page_table table tbody tr:last-child .opponent_data_box {
+.schedule_page_table table tbody tr:last-child .opponent_data_box{
     padding-bottom: 20px !important;
 }
-
-.opponent_wrapper {
+.opponent_wrapper{
     width: 65%;
 }
-
-.opponent_wrapper_header {
+.opponent_wrapper_header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1079,27 +1131,23 @@ ul li {
     border-bottom: 1px solid white;
     border-right: 1px solid white;
 }
-
-.opponent_wrapper_header p {
+.opponent_wrapper_header p{
     color: white;
     font-weight: 700;
     font-family: 'Termina Heavy';
     font-size: 36px;
 }
-
-.opponent_data_box {
+.opponent_data_box{
     padding: 10px 20px;
     display: flex;
     align-items: center;
     border-right: 1px solid white;
 }
-
-.opponent_data_box img {
+.opponent_data_box img{
     max-width: 200px;
     height: auto;
 }
-
-.opponent_data_box p {
+.opponent_data_box p{
     font-weight: 500;
     font-family: 'Termina Medium';
     font-size: 24px;
@@ -1107,17 +1155,14 @@ ul li {
     margin: 0;
     text-transform: uppercase;
 }
-
-.opponent_data_box div {
+.opponent_data_box div{
     width: 100%;
     text-align: center;
 }
-
-.date_wrapper {
+.date_wrapper{
     width: 35%;
 }
-
-.date_wrapper_header {
+.date_wrapper_header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1125,19 +1170,16 @@ ul li {
     text-align: center;
     border-bottom: 1px solid white;
 }
-
-.date_wrapper_header p {
+.date_wrapper_header p{
     color: white;
     font-weight: 700;
     font-family: 'Termina Heavy';
     font-size: 36px;
 }
-
-.date_data_box {
-    padding: 10px 20px;
+.date_data_box{
+    padding:10px 20px;
 }
-
-.date_data_box p {
+.date_data_box p{
     font-weight: 500;
     font-family: 'Termina Medium';
     font-size: 24px;
@@ -1146,593 +1188,530 @@ ul li {
     text-align: center;
     text-transform: uppercase;
 }
-
 /*schedule page css
 ==========================================================================================*/
+
+
+
+
 /*footer 
 ==========================================================================================*/
-footer {
+footer{
     background: #0d1d41;
     padding: 30px 0px;
 }
-
-footer .footer_box {
+footer .footer_box{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-footer .footer_box p {
+footer .footer_box p{
     margin: 0;
     font-size: 24px;
     font-weight: 800;
     font-family: 'Termina Heavy';
     color: white;
 }
-
 /*footer 
 ==========================================================================================*/
+
+
+
+
+
+
+
 /*========================================================================================
 ==========================================================================================
 ======================   Responsove Design start  ========================================
 ==========================================================================================
 ==========================================================================================
 */
+
+
+
+
+
+
+
+
 /* responsive laptop screen  
 ==========================================================================================*/
-@media screen and (min-width: 1200px) {
-    .capitals_data_box {
-        max-width: 650px;
+@media screen and (min-width: 1200px){
+    .capitals_data_box{
+         max-width: 650px;
     }
 }
-
 /* responsive laptop screen  
 ==========================================================================================*/
+
+
+
 /* responsive Small laptop screen  
 ==========================================================================================*/
-@media screen and (max-width: 1199px) {
-    .swag_bag_image_box .Ovi-Jersey {
-        transform: translate(70px, 80px);
+@media screen and (max-width: 1199px){
+    .swag_bag_image_box .Ovi-Jersey{
+        transform: translate(70px , 80px);
     }
-
     /*game of the month
     =======================================*/
-    .game_of_month_box_img {
+    .game_of_month_box_img{
         max-width: 400px;
     }
-
-    .game_of_month_box_data_box {
+    .game_of_month_box_data_box{
         min-width: 560px;
     }
-
-    .game_of_month_box_data_box h2 {
+    .game_of_month_box_data_box h2{
         font-size: 32px;
     }
-
-    .game_of_month_box_heading {
+    .game_of_month_box_heading{
         font-size: 80px;
     }
-
-    .game_of_month_box_heading2 {
+    .game_of_month_box_heading2{
         font-size: 80px;
     }
-
-    .game_of_month_box_data_box {
+    .game_of_month_box_data_box{
         max-width: 530px;
         min-width: 530px;
     }
 }
-
 /* responsive Small laptop screen  
 ==========================================================================================*/
+
+
+
 /*responsive for tablet screen 
 ========================================================================================*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px){
 
     /*font size
     ===============================*/
-    .heading_2 {
+    .heading_2{
         font-size: 32px;
     }
 
     /*banner
     ==============================*/
-    .banner {
+    .banner{
         padding: 50px 0px;
     }
-
-    .banner_box {
+    .banner_box{
         padding: 60px;
     }
-
-    .banner_box h1 {
+    .banner_box h1{
         font-size: 32px;
     }
 
     /*swag_bag section css
     ==============================*/
-    .swag_bag {
+    .swag_bag{
         padding-top: 50px;
     }
-
-    .btn_theme_danger_large {
+    .btn_theme_danger_large{
         font-size: 16px;
         padding: 10px 25px;
     }
-
-    .swag_bag_grid {
+    .swag_bag_grid{
         gap: 30px;
     }
-
-    .swag_bag_image_box .Ovi-Jersey {
+    .swag_bag_image_box .Ovi-Jersey{
         scale: 0.7;
-        transform: translate(100px, 100px);
+        transform: translate(100px , 100px);
     }
 
     /*game of the month
     ==========================*/
-    .game_of_month_box_heading {
+    .game_of_month_box_heading{
         font-size: 60px;
     }
-
-    .game_of_month_box_heading2 {
+    .game_of_month_box_heading2{
         font-size: 60px;
         right: 10%;
     }
-
-    .game_of_month_box_img {
+    .game_of_month_box_img{
         max-width: 300px;
     }
-
-    .game_of_month_box_data_box {
+    .game_of_month_box_data_box{
         max-width: 390px;
         min-width: 390px;
     }
-
-    .game_of_month_box_data_box h2 {
+    .game_of_month_box_data_box h2{
         font-size: 27px;
     }
-
-    .game_of_month_box_data_box .btn_group {
+    .game_of_month_box_data_box .btn_group{
         flex-direction: column;
     }
-
-    .game_of_month2 {
+    .game_of_month2{
         padding-top: 50px;
     }
 
     /*additional section css
     =================================*/
-    .additional_card {
-        flex: 0 0 calc((100% - 50px) / 2);
-        padding: 30px;
+    .additional_card{
+       flex: 0 0 calc((100% - 50px) / 2);
+       padding: 30px;
     }
-
-    .additional {
+    .additional{
         padding: 50px 0px;
     }
 
     /*additional section css
     =================================*/
-    .ultimate_card {
-        flex: 0 0 calc((100% - 100px) / 2);
-        padding: 30px;
+    .flip-box{
+       flex: 0 0 calc((100% - 100px) / 2);
     }
-
-    .ultimate {
+    .ultimate{
         padding: 0px 0px 50px 0px;
     }
-
-    .ultimate_heading p {
+    .ultimate_heading p{
         max-width: 100%;
     }
 
     /*schedule page css
     ===============================*/
-    .schedule_page_header_logo img {
-        width: 180px;
+    .schedule_page_header_logo img{
+        width: 180px ;
         height: auto;
     }
-
-    .tab-link label {
+    .tab-link label{
         font-size: 24px;
     }
-
-    .page_content_heading span {
+    .page_content_heading span{
         font-size: 100px;
     }
-
-    .page_content_heading h2 {
+    .page_content_heading h2{
         font-size: 40px;
     }
-
-    .page_content_heading p {
+    .page_content_heading p{
         font-size: 30px;
     }
-
-    .opponent_data_box img {
+    .opponent_data_box img{
         max-width: 150px;
         height: auto;
     }
-
-    .opponent_data_box p {
+    .opponent_data_box p{
         font-size: 18px;
         padding: 0px 10px;
     }
-
-    .date_data_box p {
+    .date_data_box p{
         font-size: 18px;
     }
 
     /*footer 
     ==============================*/
-    footer .footer_box img {
+    footer .footer_box img{
         width: 200px;
         height: auto;
     }
-
-    footer .footer_box p {
+    footer .footer_box p{
         font-size: 20px;
     }
 }
-
 /*responsive for tablet screen 
 ========================================================================================*/
+
+
+
+
+
 /*responsive for Mobile screen
 ========================================================================================*/
 @media screen and (max-width: 767px) {
 
     /*font size
     ===============================*/
-    .heading_2 {
+    .heading_2{
         font-size: 24px;
     }
-
     section {
-        scroll-margin-top: 65px;
-        /* navbar ki height jitni */
+      scroll-margin-top: 65px; 
     }
 
     /*navbar
     ================================*/
-    .navbar {
+    .navbar{
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         z-index: 9999;
     }
-
     .menu {
         position: fixed;
         top: 0;
         left: -100%;
         height: 100%;
         width: 230px;
-        background: linear-gradient(#0d1d41, #214BA7);
+        background: linear-gradient(#0d1d41 ,#214BA7);
         flex-direction: column;
         align-items: center;
         padding: 70px 20px;
         margin-top: 0px;
-        border: none;
+        border:none;
         gap: 40px;
         transition: left 0.4s ease;
         justify-content: flex-start;
         z-index: 99999;
     }
-
-    .menu-toggle:checked~.menu {
+    .menu-toggle:checked ~ .menu {
         left: 0;
     }
-
     .menu-icon {
         display: flex;
     }
-
-    .menu-toggle:checked+.menu-icon span:nth-child(1) {
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-
-    .menu-toggle:checked+.menu-icon span:nth-child(2) {
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
         opacity: 0;
     }
-
-    .menu-toggle:checked+.menu-icon span:nth-child(3) {
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
     }
-
-    .navbar {
+    .navbar{
         padding: 16px 0px;
     }
-
-    .navbar_box {
+    .navbar_box{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
-    .logo {
+    .logo{
         margin-top: 0;
     }
-
-    .logo img {
+    .logo img{
         width: 150px;
         height: auto;
     }
 
     /*banner
     ====================================*/
-    .banner {
+    .banner{
         padding: 95px 0px 30px 0px;
     }
-
-    .banner_box {
+    .banner_box{
         padding: 20px;
     }
-
-    .banner_box h1 {
+    .banner_box h1{
         font-size: 28px;
     }
 
     /*swag_bag section css
     ==============================*/
-    .swag_bag {
+    .swag_bag{
         padding-top: 30px;
         padding-bottom: 0px;
     }
-
-    .btn_theme_danger_large {
+    .btn_theme_danger_large{
         font-size: 15px;
         padding: 10px 25px;
     }
-
-    .swag_bag_btn_box {
+    .swag_bag_btn_box{
         text-align: center;
         margin-top: 30px;
     }
-
-    .swag_bag_grid {
+    .swag_bag_grid{
         gap: 20px;
         grid-template-rows: auto 1fr;
         grid-template-columns: 1fr;
     }
-
-    .swag_bag_data_wrapper {
+    .swag_bag_data_wrapper{
         text-align: center;
     }
-
-    .swag_bag_data_wrapper ul {
+    .swag_bag_data_wrapper ul{
         list-style: none;
         padding-left: 0px;
     }
-
-    .swag_bag_image_box .Ovi-Jersey {
+    .swag_bag_image_box .Ovi-Jersey{
         right: 0px;
         bottom: 0px
     }
 
     /*game of month 
     ===============================*/
-    .game_of_month_box_heading {
+    .game_of_month_box_heading{
         display: none;
     }
-
-    .game_of_month_box_heading2 {
+    .game_of_month_box_heading2{
         display: none;
     }
-
-    .scroll_box_first {
+    .scroll_box_first{
         padding-top: 30px;
     }
-
-    .mobile_game_of_month_heading {
+    .scroll_box{
+        flex: 0 0 100%;
+    }
+    .mobile_game_of_month_heading{
         display: block;
         text-align: center;
     }
-
-    .game_of_month_box {
+    .game_of_month_box{
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-
-    .game_of_month_box_data_box {
+    .game_of_month_box_data_box{
         order: 1;
         max-width: 100%;
-        min-width: 100%;
+            min-width: 100%;
     }
-
-    .game_of_month_box_image_box {
+    .game_of_month_box_image_box{
         order: 2;
     }
-
-    .game_of_month_box_data_box h2 {
+    .game_of_month_box_data_box h2{
         font-size: 24px;
     }
-
-    .game_of_month_box_data_box p {
+    .game_of_month_box_data_box p{
         font-size: 16px;
     }
-
-    .game_of_month_box_img {
+    .game_of_month_box_img{
         max-width: 100%;
         margin: 0;
     }
-
-    .scroll_box_second div {
+    .scroll_box_second div{
         padding: 0px 20px;
     }
-
-    .scroll_box_second div p {
+    .scroll_box_second div p{
         font-size: 15px;
         margin: 20px auto 30px auto;
     }
-
-    .game_of_month2 {
+    .game_of_month2{
         padding-top: 30px;
     }
-
-    .scroll_box_first2 {
+    .scroll_box_first2{
         padding-top: 0px;
     }
-
-    .scroll-container {
+    .scroll-container{
         padding-bottom: 20px;
     }
-
-    .game_of_month_box_img {
+    .game_of_month_box_img{
         transform: translate(0);
     }
 
     /*additional section css
     =================================*/
-    .additional {
+    .additional{
         padding: 40px 0px;
     }
-
-    .additional_scroll_wrapper {
+    .additional_scroll_wrapper{
         padding-top: 30px;
     }
-
-    .additional_card {
-        flex: 0 0 calc((100% - 50px) / 1);
-        padding: 20px;
+    .additional_card{
+       flex: 0 0 calc((100% - 50px) / 1);
+       padding: 20px;
     }
-
-    .additional_card .card_button {
+    .additional_card .card_button{
         font-size: 16px;
     }
-
-    .additional_heading p {
+    .additional_heading p{
         font-size: 16px;
     }
 
     /*subscriber section
     ==================================*/
-    .subscriber_wrapper {
+    .subscriber_wrapper{
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding-top: 30px;
     }
-
-    .subscriber_image_box {
+    .subscriber_image_box{
         max-width: 300px;
     }
-
-    .subscriber_quote_text {
+    .subscriber_quote_text{
         font-size: 16px;
     }
-
-    .subscriber_quote_name span {
+    .subscriber_quote_name span{
         font-size: 28px;
     }
-
-    .subscriber_quote_name p {
+    .subscriber_quote_name p{
         font-size: 15px;
     }
 
     /*ultimate  section
     ==================================*/
-    .ultimate {
-        padding: 0px 0px 40px 0px;
+    .ultimate{
+        padding:0px 0px 40px 0px;
     }
-
-    .ultimate_heading p {
+    .ultimate_heading p{
         font-size: 16px;
     }
-
-    .ultimate_scroll_wrapper {
+    .ultimate_scroll_wrapper{
         padding-top: 30px;
         gap: 25px;
     }
-
-    .ultimate_card {
-        flex: 0 0 calc((100% - 100px) / 1);
-        padding: 20px;
+    .flip-box{
+       flex: 0 0 calc((100% - 100px) / 1);
     }
-
-    .ultimate_card .card_title p {
+    .flip-box-front .card_title p{
         font-size: 15px;
     }
-
-    .ultimate_card .card_text p {
+    .flip-box-front .card_text p{
         font-size: 16px;
     }
-
+    .flip-box-back .card_date p{
+        font-size: 15px;
+    }
+    .card_back_heading p{
+        font-size: 16px;
+    }
     /*schedule page css
     ===============================*/
-    .schedule_page_header {
+    .schedule_page_header{
         padding: 15px 0px;
     }
-
-    .tab-link {
+    .tab-link{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 15px;
         padding-top: 10px;
     }
-
-    .tab_content_wrapper {
+    .tab_content_wrapper{
         padding: 40px 0px 60px 0px;
     }
-
-    .tab-link label {
+    .tab-link label{
         font-size: 20px;
     }
-
-    .page_content_heading span {
+    .page_content_heading span{
         font-size: 60px;
     }
-
-    .page_content_heading h2 {
+    .page_content_heading h2{
         font-size: 24px;
     }
-
-    .page_content_heading p {
+    .page_content_heading p{
         font-size: 18px;
     }
-
-    .opponent_data_box img {
+    .opponent_data_box img{
         max-width: 150px;
         height: auto;
     }
-
-    .opponent_wrapper_header {
+    .opponent_wrapper_header{
         padding: 10px;
     }
-
-    .schedule_page_table {
+    .schedule_page_table{
         margin-top: 40px;
     }
-
-    .date_wrapper_header {
+    .date_wrapper_header{
         padding: 10px;
     }
-
-    .opponent_wrapper_header p {
+    .opponent_wrapper_header p{
         font-size: 18px;
     }
-
-    .date_wrapper_header p {
+    .date_wrapper_header p{
         font-size: 18px;
     }
-
-    .opponent_data_box p {
+    .opponent_data_box p{
         font-size: 14px;
         padding: 0px 10px;
     }
-
-    .date_data_box {
+    .date_data_box{
         padding: 10px;
     }
-
-    .date_data_box p {
+    .date_data_box p{
         font-size: 14px;
     }
-
-    .opponent_data_box {
+    .opponent_data_box{
         padding: 10px;
         flex-direction: column;
         gap: 10px;
@@ -1740,32 +1719,28 @@ footer .footer_box p {
 
     /*footer 
     ==============================*/
-    footer {
+    footer{
         padding: 20px 0px;
     }
-
-    footer .footer_box {
+    footer .footer_box{
         flex-direction: column;
         gap: 10px;
     }
-
-    footer .footer_box img {
+    footer .footer_box img{
         width: 150px0px;
         height: auto;
     }
-
-    footer .footer_box p {
+    footer .footer_box p{
         font-size: 17px;
         text-align: center;
     }
 }
 
-@media screen and (max-width: 575px) {
-    .navbar .container {
+@media screen and (max-width: 575px){
+    .navbar .container{
         width: 100%;
     }
-
-    .container {
+    .container{
         width: auto;
     }
 }
